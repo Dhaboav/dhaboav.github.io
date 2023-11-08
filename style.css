@@ -1,4 +1,4 @@
-html, body {margin: 0;}
+html, body {margin: 0px;}
 .header {
     display: flex;
     height: 80px;
@@ -10,9 +10,52 @@ html, body {margin: 0;}
 
 .header a, .navbar a{
     color: rgb(255, 255, 255);
-    margin: 0 30px;
+    margin: 0 20px;
     text-decoration: none;
     font-size: large;
 }
 
-.navbar a:hover {color: rgb(113, 113, 113)}
+.navbar a:hover {color: rgb(167, 234, 255)}
+.contents {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 1500px;
+    box-sizing: border-box;
+}
+.about-me {background-color: chartreuse;}
+.about-me h3{text-align: center;}
+.about-contents {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.about-contents img {
+    margin: 20px;
+    width: 200px;
+}
+
+.about-contents p{
+    margin-right: 20px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    height: 150px;
+    background-color: rgb(27, 198, 250);
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.msgfooter {color: rgb(255, 255, 255);}
+.navfootbar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0px 15px;
+    font-size: large;
+}
+
+.navfootbar a:hover{color: rgb(167, 234, 255)}
