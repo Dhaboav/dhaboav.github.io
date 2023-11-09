@@ -9,35 +9,33 @@ body {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: #56342A;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-body p {
-    margin-top: 20px;
-}
-
+/* ---------------------------------------------------------------------------------- */
 .box {
-    height: 86vh;
-    width: 85%;
+    width: 75%;
+    height: 30rem;
     border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     backdrop-filter: blur(100px);
     box-shadow: 15px -17px 17px rgba(10, 10, 10, 0.15);
-    background: rgba(84, 84, 84, 0.8);
+    background: rgba(255, 255, 255, 0.3);
 }
 
-.header {
+/* Header */
+header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 20px 30px;
 }
 
 .logo {
     margin-left: 30px;
+    margin-right: auto;
     text-decoration: none;
     color: white;
     font-size: 24px;
@@ -45,75 +43,73 @@ body p {
 }
 
 .logo::first-letter {color: rgb(43, 226, 83);}
-.navbar a {
-    margin: 30px;
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
     font-weight: 700;
+    margin-left: 30px;
     transition: 0.3s;
 }
 
-.navbar a:hover {
+nav ul li a:hover {
     color: rgb(43, 226, 83);
     border-bottom: 1px solid rgb(43, 226, 83);
 }
 
-.content {
+/* ------------------------------------------------------------------------------------ */
+/* Main */
+main {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 60%;
-    margin-top: 6%;
-    padding-left: 60px;
-    gap: 80px;
+    width: 90%;
+    margin: 5% auto;
 }
 
+/* about text*/
 .about-me {
-    width: 500px;
+    width: 50%;
     flex-wrap: wrap;
     text-align: end;
+    padding: 10px;
+    color: white;
 }
 
-.content .about-me h1 {
-    margin-bottom: 10px;
+.about-me h1 {
     font-size: 30px;
     font-weight: 700;
-    color: white;
 }
 
-.content .about-me h3 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: white;
-}
-
-.content .about-me p {
+.about-me h3 {font-size: 20px;}
+.about-me p {
+    margin: 25px 0;
     font-size: 15px;
-    color: white;
-    margin-bottom: 40px;
 }
 
-.content .resume {
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    border: 3px solid rgb(43, 226, 83);
+.btn-about {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(43, 226, 83);
     background-color: rgb(43, 226, 83);
-    font-weight: 800;
+    color: white;
+    font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.content .resume:hover {
+.btn-about:hover {
     background-color: white;
     color: rgb(43, 226, 83);
 }
 
-.content .image {
+/* about picture */
+.profile-img {
     background-color: rgb(43, 226, 83);
-    margin-left: -150px;
+    margin: 0 auto;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -122,39 +118,11 @@ body p {
     transition: 0.3s;
 }
 
-.content .image img {
+.profile-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.content .image:hover {transform: scale(1.2);}
-.social-media {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-    margin-right: 30px;
-}
-
-.social-media #git {
-    background-color: rgb(0, 0, 0);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: 0.3s;
-    margin-left: 30px;
-}
-
-.social-media #git:hover {transform: scale(1.2);}
-.social-media #ig {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: 0.3s;
-    margin-left: 30px;
-}
-
-.social-media #ig:hover {transform: scale(1.2);}
+.profile-img:hover {transform: scale(1.1);}
+/* --------------------------------------------------------------------- */

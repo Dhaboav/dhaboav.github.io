@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portofolio</title>
+    <title>Dhaboav's website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="box">
-        <div class="header">
+        <header>
             <a href="#" class="logo">Dhaboav</a>
-            <div class="navbar">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        <div class="content">
-            <div class="about-me">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="about-me" id="about">
                 <h1>Hi, I am Dhaboav</h1>
                 <h3>Computer Vision Enthusiasts</h3>
                 <p>I'm a passionate in computer vision and robotics.
@@ -27,17 +30,13 @@
                     each of which has contributed to my growth and expertise.
                     This website serves as a showcase of my skills, experiences, and projects.
                 </p>
-                <a href="#" class="resume">Download CV</a>
-            </div>
-            <div class="image">
-                <img src="img\resume.png" alt="profile">
-            </div>
-        </div>
-        <div class="social-media">
-            <a href="https://github.com/Dhaboav"><img src="img\github.png" alt="github" id="git"></a>
-            <a href="#"><img src="img\ig.png" alt="instagram" id="ig"></a>
-        </div>
+                <a href="#" class="btn-about">Download CV</a>
+            </section>
+            <section class="profile-img">
+                <img src="img\profile.png" alt="profile">
+            </section>
+        </main>
     </div>
-    <p>@Dhaboav 2023</p>
 </body>
+
 </html>
