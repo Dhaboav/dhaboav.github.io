@@ -137,6 +137,11 @@ main {
 /* Responsive */
 @media screen and (max-width:640px) {
     html {font-size: 14px;}
+    .box {
+        width: 95vw;
+        height: 95vh;
+    }
+
     header {
         flex-direction: column;
         justify-content: center;
