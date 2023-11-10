@@ -7,7 +7,7 @@
 <h3 align="center">My first portofolio web</h3>
 
   <p align="center">
-    This repository is for my first portofolio website using only HTML and CSS. Unresponsive but that for future...
+    This repository is for my first portofolio website using only HTML and CSS. Ongoing add responsive feature...
 </div>
 
 
@@ -25,10 +25,8 @@ Here is the file structure of this repository
 ```
 .  
 ├── img
-|   |
-|   ├── github.png
-|   ├── ig.png
-|   └── resume.png
+|   |  
+|   └── profile.png
 |
 ├── index.html
 ├── README.md
