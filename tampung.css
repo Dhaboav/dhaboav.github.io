@@ -1,9 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html {font-size: 1vmax;}
+html {font-size: 10px;}
 body {
     background-color: black;
     height: 100vh;
@@ -25,10 +26,58 @@ header a {
 
 .logo {
     font-size: 4rem;
-    margin-left: .5em;
+    margin: 1rem;
 }
 
-nav a {
+/* nav a {
     font-size: 2rem;
-    margin-right: .5em;
+    margin-right: 1rem;
+} */
+
+
+.menu {
+    font-size: 10px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 4rem;
+    height: 4rem;
 }
+
+
+.menu .bar {
+    height: .5rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.menu.active .bar {
+    background-color: red; /* Change this to the desired color */
+}
+
+/* main */
+main {
+    display: flex;
+    min-height: 80%;
+    background-color: blueviolet;
+    justify-content: end;
+}
+
+/* ------------------------------------ -*/
+.navbar-links {
+    width: 10%;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    top: 0;
+    right: 0;
+}
+
+.navbar-links.active {
+    display: block;
+}
+/* ------------------------------ */
