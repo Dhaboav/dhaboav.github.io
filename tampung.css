@@ -48,11 +48,13 @@ header {
     font-size: 4rem;
     color: white;
 }
+
 /* --------------------------------- */
 /* Content */
 main {
     display: flex;
     height: 80%;
+    position: relative;
 }
 
 
@@ -61,6 +63,7 @@ section {
     width: 100%;
     background-color: blue;
 }
+
 /* --------------------------------- */
 
 /* Sidebar Mobile */
@@ -69,6 +72,10 @@ section {
 }
 
 .links.show {
+    position: absolute;
+    top: 0;
+    right: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -76,7 +83,7 @@ section {
     padding: .5rem;
     height: 100%;
     width: 15%;
-    background-color: rgba(0, 200, 255, 0.638);
+    background-color: rgba(0, 0, 0, 0.638);
 }
 
 .links a {
@@ -101,4 +108,5 @@ section {
     margin-top: .5rem;
     font-size: 1.5rem;
 }
+
 /* --------------------------------- */
