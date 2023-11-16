@@ -48,7 +48,21 @@ function changeContent(page) {
             </div>`;
             break;
         case 'about':
-            contentSection.innerHTML = "<p>This is the About page content.</p>";
+            contentSection.innerHTML = `
+            <div id="content-section">
+                <div class="about-content">
+                    <h1>Who i am?</h1>
+                    <div class="about-img">
+                        <img src="img/profile.png" alt="profile">
+                    </div>
+                    <p>
+                        Hello! I'm Dhammiko Bodhi Avatara, 
+                        currently an undergraduate student at the University of Tanjungpura. 
+                        My focus lies in the exciting realm of computer vision, 
+                        where I delve into projects and explore the wonders of visual data.
+                    </p>
+                </div>
+            </div>`;
             break;
         case 'skills':
             contentSection.innerHTML = "<p>This is the Skills page content.</p>";
