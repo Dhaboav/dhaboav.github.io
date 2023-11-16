@@ -28,7 +28,26 @@ function changeContent(page) {
 
     switch (page) {
         case 'home':
-            contentSection.innerHTML = "<p>This is the Home page content.</p>";
+            contentSection.innerHTML = `
+            <div id="content-section">
+                <div class="home-img">
+                    <img src="img/profile.png" alt="profile">
+                </div>
+                <div class="home-content">
+                    <h1>Dhammiko Bodhi Avatara</h1>
+                    <h2>Computer Vision Enthusiasm</h2>
+                    <p>
+                        Welcome to the world of cutting-edge technology! 
+                        I am a visionary computer vision enthusiast with a 5 years-long journey in the field. 
+                        My expertise lies at the forefront of the robotic realm, where I've passionately contributed to shaping the future. 
+                        Let's embark on an exciting exploration of possibilities together!
+                    </p>
+                    <div id="resume-btn">
+                        <i class='bx bxs-download'></i>
+                        <a href="#">Resume</a>
+                    </div>
+                </div>
+            </div>`;
             break;
         case 'about':
             contentSection.innerHTML = "<p>This is the About page content.</p>";
