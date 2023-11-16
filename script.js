@@ -37,9 +37,7 @@ function changeContent(page) {
                     <h1>Dhammiko Bodhi Avatara</h1>
                     <h2>Computer Vision Enthusiasm</h2>
                     <p>
-                        Welcome to the world of cutting-edge technology! 
-                        I am a visionary computer vision enthusiast with a 5 years-long journey in the field. 
-                        My expertise lies at the forefront of the robotic realm, where I've passionately contributed to shaping the future. 
+                        Welcome to the world of cutting-edge technology!  
                         Let's embark on an exciting exploration of possibilities together!
                     </p>
                     <div id="resume-btn">
