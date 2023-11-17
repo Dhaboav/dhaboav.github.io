@@ -65,7 +65,40 @@ function changeContent(page) {
             </div>`;
             break;
         case 'skills':
-            contentSection.innerHTML = "<p>This is the Skills page content.</p>";
+            contentSection.innerHTML = `
+            <div id="content-section">
+                <div class="skills-content">
+                    <h1>Skills</h1>
+                    <div class="skills-logo">
+                        <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python">
+                        <div>
+                            <h3>Python</h3>
+                            <p>High level programing language</p>
+                        </div>
+                    </div>
+                    <div class="skills-logo">
+                        <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv">
+                        <div>
+                            <h3>Opencv</h3>
+                            <p>Library for image manipulation</p>
+                        </div>
+                    </div>
+                    <div class="skills-logo">
+                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Basic structure for a website</p>
+                        </div>
+                    </div>
+                    <div class="skills-logo">
+                        <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Styling for a website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
             break;
         case 'contacts':
             contentSection.innerHTML = "<p>This is the Contacts page content.</p>";
