@@ -101,7 +101,31 @@ function changeContent(page) {
             </div>`;
             break;
         case 'contacts':
-            contentSection.innerHTML = "<p>This is the Contacts page content.</p>";
+            contentSection.innerHTML = `
+            <div id="content-section">
+                <div class="contact-content">
+                    <h1> Contact Me </h1>
+                    <div class="email-box">
+                        <i class='bx bxs-envelope'></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>xxx@gmail.com</p>
+                        </div>
+                    </div>
+                    <form action="mailto:xxx@gmail.com" method="post" enctype="text/plain">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>`;
             break;
     }
 
