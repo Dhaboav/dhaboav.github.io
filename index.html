@@ -1,44 +1,66 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhaboav's website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Dhabov's website</title>
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head> 
 <body>
-    <div class="box">
-        <header>
-            <a href="#" class="logo">Dhaboav</a>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="about-me" id="about">
-                <h1>Hi, I am Dhaboav</h1>
-                <h3>Computer Vision Enthusiasts</h3>
-                <p>I'm a passionate in computer vision and robotics.
-                    Throughout my journey, I've had the opportunity to work on diverse projects,
-                    each of which has contributed to my growth and expertise.
-                    This website serves as a showcase of my skills, experiences, and projects.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus perspiciatis veritatis, iure, quod recusandae quia soluta cupiditate sit officiis odit maiores saepe, voluptatem id nesciunt ea temporibus esse quibusdam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique hic quidem libero, illo beatae, at ipsum est, vitae praesentium eum reiciendis modi. Accusantium, voluptatum consectetur! Quasi fugiat maxime dolor atque?</p>
-                <a href="#" class="btn-about">Download CV</a>
-            </section>
-            <section class="profile-img">
+    <script src="script.js"></script>
+    <div class="header">
+        <a onclick="changeContent('home')" class="logo">Dhaboav</a>
+        <button class="menu-button"><i class='bx bx-menu'></i></button>
+    </div>
+    <div class="container">
+        <div class="links">
+            <a onclick="changeContent('home')">
+                <span class="link-box">
+                    <i class='bx bxs-home-alt-2'></i>
+                    <p>Home</p>
+                </span>
+            </a>
+            <a onclick="changeContent('about')">
+                <span class="link-box">
+                    <i class='bx bxs-info-circle'></i>
+                    <p>About</p>
+                </span>
+            </a>
+            <a onclick="changeContent('skills')">
+                <span class="link-box">
+                    <i class='bx bxs-cog'></i>
+                    <p>Skills</p>
+                </span>
+            </a>
+            <a onclick="changeContent('contacts')">
+                <span class="link-box">
+                    <i class='bx bxs-contact'></i>
+                    <p>Contact</p>
+                </span>
+            </a>
+        </div>
+        <div id="content-section">
+            <div class="home-img">
                 <img src="img\profile.png" alt="profile">
-            </section>
-        </main>
+            </div>
+            <div class="home-content">
+                <h1>Dhammiko Bodhi Avatara</h1>
+                <h2>Computer Vision Enthusiasm</h2>
+                <p>
+                    Welcome to the world of cutting-edge technology!  
+                    Let's embark on an exciting exploration of possibilities together!
+                </p>
+                <div id="resume-btn">
+                    <i class='bx bxs-download'></i>
+                    <a href="#">Resume</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>
