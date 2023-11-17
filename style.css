@@ -254,7 +254,7 @@ body {
 
 @media only screen and (min-width: 992px) {
     html{font-size: 14px;}
-    
+
     /* ---------- Header Laptop ---------------- */
     .menu-button {display: none;}
     .links-laptop {display:flex;}
@@ -278,6 +278,8 @@ body {
         flex-direction: row;
         width: 100%;
     }
+
+    /* ---------- Home Laptop ---------------- */
     .home-img img{
         margin: 8rem auto;
         background-color: orangered;
@@ -292,4 +294,23 @@ body {
     }
     .home-content h1 {font-size: 5rem;}
     .home-content p {font-size: 1.5rem;}
+
+
+    /* ---------- Skills Laptop ---------------- */
+    .skills-content {
+        width: 100%;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    /* ---------- Contact Laptop ---------------- */
+    .contact-content {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    .contact-content h1 {display: none;}
 }
