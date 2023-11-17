@@ -1,3 +1,4 @@
+/* ---------- Mobile ---------------- */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ body {
     height: 100vh;
     background: #1F2235;
 }
-/* ---------- Header Mobile ---------------- */
+/* ---------- Header ---------------- */
 .header {
     display: flex;
     align-items: center;
@@ -38,14 +39,14 @@ body {
     color: white;
 }
 .links-laptop {display: none;}
-/* ---------- Container Mobile ---------------- */
+/* ---------- Container ---------------- */
 .container {
     display: flex;
     height: 90vh;
     position: relative;
     flex-direction: column;
 }
-/* ---------- Sidebar Mobile ---------------- */
+/* ---------- Sidebar  ---------------- */
 .links {display: none;}
 .links.active {
     display: flex;
@@ -78,15 +79,13 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
 }
-/* ---------- Content Mobile ---------------- */
+/* ---------- Content ---------------- */
 #content-section {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-
-
-/* Home */
+/* ---------- Home ---------------- */
 .home-content {
     flex: 1;
     max-height: 50%;
@@ -94,8 +93,6 @@ body {
     color: black;
     padding: 0 2rem;
 }
-
-/* img */
 .home-img {
     flex: 1;
     max-height: 50%;
@@ -105,8 +102,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
-/* Text */
 .home-content h1 {
     color: orangered;
     margin-top: 10%;
@@ -118,8 +113,6 @@ body {
     margin-top: 1.5rem;
     font-size: 1rem;
 }
-
-/* Resume btn */
 #resume-btn {
     margin-top: 1.5rem;
     width: 8rem;
@@ -145,7 +138,7 @@ body {
 }
 #resume-btn:hover a{color: black;}
 
-/* about me */
+/* ---------- About ---------------- */
 .about-content {
     background-color: white;
     color: black;
@@ -178,8 +171,7 @@ body {
     font-size: 1.5rem;
     text-align: center;
 }
-
-/* skills */
+/* ---------- Skills ---------------- */
 .skills-content {
     margin-top: 2rem;
     color: white;
@@ -201,8 +193,7 @@ body {
     height: auto; 
     margin-right: 1rem;
 }
-
-/* Contact */
+/* ---------- Contact ---------------- */
 .contact-content {
     margin-top: 2rem;
     color: white;
@@ -247,10 +238,11 @@ body {
     background-color: #1F2235;
 }
 
-/* ---------- Responsive Laptop ---------------- */
+
+/* ---------- Laptop ---------------- */
 @media only screen and (min-width: 992px) {
     html{font-size: 14px;}
-    /* ---------- Header Laptop ---------------- */
+    /* ---------- Header ------------ */
     .menu-button {display: none;}
     .links-laptop {display:flex;}
     .links-laptop a {
@@ -262,7 +254,7 @@ body {
         font-size: 1.5rem;
     }
     .links-laptop a:hover {color: orangered;}
-    /* ---------- Main Laptop ---------------- */
+    /* ---------- Main ------------ */
     .container {
         flex-direction: row;
         padding: 0 8rem;
@@ -272,7 +264,7 @@ body {
         flex-direction: row;
         width: 100%;
     }
-    /* ---------- Home Laptop ---------------- */
+    /* ---------- Home ------------ */
     .home-content {
         background-color: #1F2235;
         color: white;
@@ -287,7 +279,7 @@ body {
     }
     .home-content h1 {font-size: 5rem;}
     .home-content p {font-size: 1.5rem;}
-    /* ---------- About Laptop ---------------- */
+    /* ---------- About ------------ */
     .about-content {
         background-color: #1F2235; 
         flex-direction: row;
@@ -310,13 +302,13 @@ body {
         width: 60%;
         text-align: right;
     }
-    /* ---------- Skills Laptop ---------------- */
+    /* ---------- Skills ------------ */
     .skills-content {
         width: 100%;
         font-size: 2rem;
         margin: 0;
     }
-    /* ---------- Contact Laptop ---------------- */
+    /* ---------- Contact ------------ */
     .contact-content {
         margin: 0;
         width: 100%;

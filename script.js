@@ -31,7 +31,7 @@ function changeContent(page) {
             contentSection.innerHTML = `
             <div id="content-section">
                 <div class="home-img">
-                    <img src="img/profile.png" alt="profile">
+                    <img src="other/profile.png" alt="profile">
                 </div>
                 <div class="home-content">
                     <h1>Dhammiko Bodhi Avatara</h1>
@@ -53,7 +53,7 @@ function changeContent(page) {
                 <div class="about-content">
                     <h1>Who i am?</h1>
                     <div class="about-img">
-                        <img src="img/profile.png" alt="profile">
+                        <img src="other/profile.png" alt="profile">
                     </div>
                     <p>
                         Hello! I'm Dhammiko Bodhi Avatara, 
