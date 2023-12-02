@@ -42,7 +42,7 @@ function changeContent(page) {
                     </p>
                     <div id="resume-btn">
                         <i class='bx bxs-download'></i>
-                        <a href="#">Resume</a>
+                        <a href="other/my_resume.pdf" download="Dhammiko Bodhi Avatara's Resume">Resume</a>
                     </div>
                 </div>
             </div>`;
