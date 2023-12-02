@@ -5,7 +5,7 @@
 <h3 align="center">My first portofolio web</h3>
 
   <p align="center">
-    This repository is for my first portofolio website using only HTML and CSS. Responsive for mobile and laptop
+    This repository is for my first portofolio website using only HTML, CSS and JavaScript. Responsive for mobile and laptop
 </div>
 
 ### File Structure
