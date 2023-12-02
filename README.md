@@ -15,10 +15,11 @@ Here is the file structure of this repository
 ├── other
 |   |
 |   ├── profile.png 
-|   └── cv.pdf
+|   └── my_resume.pdf
 |
 ├── index.html
 ├── README.md
+├── script.js
 └── style.css
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
