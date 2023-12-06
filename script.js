@@ -68,7 +68,6 @@ function changeContent(page) {
             contentSection.innerHTML = `
             <div id="content-section">
                 <div class="skills-content">
-                    <h1>Skills</h1>
                     <div class="skills-logo">
                         <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python">
                         <div>
@@ -90,7 +89,7 @@ function changeContent(page) {
                             <p>Basic structure for a website</p>
                         </div>
                     </div>
-                    <div class="skills-logo">
+                    <div class="skills-logo-last">
                         <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css">
                         <div>
                             <h3>CSS</h3>
@@ -104,12 +103,19 @@ function changeContent(page) {
             contentSection.innerHTML = `
             <div id="content-section">
                 <div class="contact-content">
-                    <h1> Contact Me </h1>
-                    <div class="email-box">
-                        <i class='bx bxs-envelope'></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>xxx@gmail.com</p>
+                    <div class="medsos">
+                        <div class="email-box">
+                            <i class='bx bxs-envelope'></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>xxx@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="linkedin-box">
+                            <a href="https://www.linkedin.com/in/dhaboav/">
+                                <i class='bx bxl-linkedin-square'></i>
+                            </a>
+                            <h3>LinkedIn</h3>
                         </div>
                     </div>
                     <form action="mailto:xxx@gmail.com" method="post" enctype="text/plain">

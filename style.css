@@ -188,7 +188,14 @@ body {
     padding: 1rem;
     width: 90%;
 }
-.skills-logo img {
+.skills-logo-last {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+}
+.skills-logo img, .skills-logo-last img{
     width: 5rem; 
     height: auto; 
     margin-right: 1rem;
@@ -202,7 +209,16 @@ body {
     display: flex;
     flex-direction: column;
 }
-.email-box {
+.medsos {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: .3rem auto;
+    justify-content: space-around;
+}
+.medsos a {color: white;}
+.medsos a:hover {color:orangered}
+.email-box, .linkedin-box{
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -210,7 +226,7 @@ body {
     width: 100%;
     color: white;
 }
-.email-box i {
+.email-box i, .linkedin-box i {
     font-size: 5rem; 
     margin-right: 1rem;  
 }
@@ -218,7 +234,7 @@ body {
     margin: .3rem auto;
     color: white;
     display: flex;
-    width: 90%;
+    width: 80%;
     flex-direction: column;
 }
 .contact-content form label {margin-top: 2rem;}
@@ -307,6 +323,7 @@ body {
         width: 100%;
         font-size: 2rem;
         margin: 0;
+        justify-content: center;
     }
     /* ---------- Contact ------------ */
     .contact-content {
@@ -317,5 +334,6 @@ body {
         flex-direction: row;
         align-items: center;
     }
-    .contact-content h1 {display: none;}
+    .medsos {flex-direction: column;}
+    .contact-content form {width: 60%;}
 }
