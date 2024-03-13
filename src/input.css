@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family:sans-serif;
+}
+
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-70;
     backdrop-filter: blur(10px);
