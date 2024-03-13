@@ -8,6 +8,58 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <!-- Header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center
+    z-10">
+    <div class="container">
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <a href="#home" class="font-bold text-lg text-primary
+                block py-6">DHABOAV</a>
+            </div>
+            <div class="flex items-center px-4">
+                <button id="hamburger" name="hamburger" type="button"
+                class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line 
+                    transition duration-300 ease-in-out origin-top-left"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line 
+                    transition duration-300 ease-in-out origin-top-left"></span>
+                </button>
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg
+                rounded-lg max-w-[250px] w-full right-4 
+                top-full lg:block lg:static lg:bg-transparent lg:max-w-full
+                lg:shadow-none lg:rounded-none">
+                    <ul class="block lg:flex">
+                        <li class="group">
+                            <a href="#home" class="text-based text-dark
+                            py-2 mx-8 flex group-hover:text-primary transform transition-transform lg:hover:scale-150">Beranda</a>
+                        </li>
+                        <li class="group">
+                            <a href="#about" class="text-based text-dark
+                            py-2 mx-8 flex group-hover:text-primary transform transition-transform lg:hover:scale-150">Tentang Saya</a>
+                        </li>
+                        <li class="group">
+                            <a href="#skills" class="text-based text-dark
+                            py-2 mx-8 flex group-hover:text-primary transform transition-transform lg:hover:scale-150">Keterampilan</a>
+                        </li>
+                        <li class="group">
+                            <a href="#portofolio" class="text-based text-dark
+                            py-2 mx-8 flex group-hover:text-primary transform transition-transform lg:hover:scale-150">Portofolio</a>
+                        </li>
+                        <li class="group">
+                            <a href="#contact" class="text-based text-dark
+                            py-2 mx-8 flex group-hover:text-primary transform transition-transform lg:hover:scale-150">Kontak</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </header>
+    <!-- Header end -->
+
     <!-- Hero section -->
     <section id='home' class='pt-36'>
         <div class='container'>
@@ -20,10 +72,10 @@
                     <p class="font-medium text-secondary mb-8 leading-relaxed">
                         Seseorang yang hobi belajar komputer visi dan kecerdasan buatan.
                     </p>
-                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-3 rounded-full hover:text-black hover:border-primary border-2 border-transparent transition-colors duration-300 ease-in-out hover:shadow-lg">
+                    <a href="dist/other/resume.pdf" download="Resume Dhammiko Bodhi Avatara" class="text-base font-semibold text-white bg-primary py-3 px-3 rounded-full hover:text-black hover:border-primary border-2 border-transparent transition-colors duration-300 ease-in-out hover:shadow-lg">
                         <i class='bx bxs-download'></i> | Resume
                     </a>
-                    <a href="#" class="ml-2 text-base font-semibold text-black border-primary border-2 py-3 px-3 rounded-full hover:text-primary hover:border-primary transition-colors duration-300 ease-in-out hover:shadow-lg">
+                    <a href="#contact" class="ml-2 text-base font-semibold text-black border-primary border-2 py-3 px-3 rounded-full hover:text-primary hover:border-primary transition-colors duration-300 ease-in-out hover:shadow-lg">
                         <i class='bx bxs-contact'></i> | Kontak
                     </a>
                 </div>
@@ -60,7 +112,7 @@
                     </p>
                     <div class="flex items-center">
                         <!-- Linked in -->
-                        <a href="https://www.linkedin.com/in/dhammiko-bodhi-avatara-49a84b291/?originalsubdomain=id" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <a href="https://www.linkedin.com/in/dhaboav/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
                         <!-- Github -->
@@ -73,5 +125,10 @@
         </div>
     </section>
     <!-- About section end -->
+
+    <!-- Script javascript -->
+    <script src="dist/js/script.js"></script>
+    <!-- Script javascript end -->
+    
 </body>
 </html>
