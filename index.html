@@ -7,6 +7,17 @@
     <title>Dhaboav's Website</title>
     <link rel="stylesheet" href="dist/style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script>
+        if (
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
 </head>
 
 <body>
@@ -26,37 +37,52 @@
                         <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
                     </button>
                     <nav id="nav-menu"
-                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
+                        class="absolute right-[1px] top-full mt-2 hidden w-full rounded-lg bg-slate-50 py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none dark:bg-secondary dark:shadow-slate-500 lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home"
-                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150">
+                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150 dark:text-white">
                                     Beranda
                                 </a>
                             </li>
                             <li class="group">
                                 <a href="#about"
-                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150">
+                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150 dark:text-white">
                                     Tentang Saya
                                 </a>
                             </li>
                             <li class="group">
                                 <a href="#skills"
-                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150">
+                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150 dark:text-white">
                                     Keterampilan
                                 </a>
                             </li>
                             <li class="group">
                                 <a href="#portofolio"
-                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150">
+                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150 dark:text-white">
                                     Portofolio
                                 </a>
                             </li>
                             <li class="group">
                                 <a href="#contact"
-                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150">
+                                    class="mx-8 flex transform py-2 text-base text-dark transition-transform group-hover:text-primary lg:hover:scale-150 dark:text-white">
                                     Kontak
                                 </a>
+                            </li>
+                            <li class="flex items-center py-2 pl-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-dark dark:text-white">Light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-primary p-1">
+                                            <div
+                                                class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-dark dark:text-white">Dark</span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -67,11 +93,11 @@
     <!-- Header end -->
 
     <!-- Hero section -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-dark md:text-xl lg:text-2xl">
+                    <h1 class="text-base font-semibold text-dark md:text-xl lg:text-2xl dark:text-white">
                         Hai Semua👋, saya
                         <span class="lg:text-5 mt-1 block text-4xl font-bold text-primary">
                             Dhammiko Bodhi Avatara
@@ -89,8 +115,8 @@
                     </a>
                 </div>
                 <div class="relative w-full self-end px-4 lg:w-1/2">
-                    <img src="dist/img/profile.png" alt="Dhammiko" class="mx-auto max-w-full lg:-mt-8" />
-                    <span class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 translate-y-1 md:scale-150">
+                    <img src="dist/img/profile.png" alt="Dhammiko" class="relative z-10 mx-auto max-w-full lg:-mt-8" />
+                    <span class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1 md:scale-150">
                         <svg class="h-72 w-72" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#ea580c"
                                 d="M50.5,-71.2C62,-61.2,65.6,-41.8,66.6,-24.9C67.5,-8,65.9,6.4,63,22C60.1,37.6,55.9,54.4,45.2,60.3C34.4,66.2,17.2,61.3,2.4,58C-12.5,54.8,-25,53.1,-36.7,47.5C-48.4,42,-59.3,32.4,-66.7,19.4C-74.2,6.3,-78.1,-10.2,-74.3,-24.9C-70.5,-39.6,-59.1,-52.5,-45.4,-61.9C-31.7,-71.2,-15.9,-76.9,1.8,-79.4C19.5,-81.9,39,-81.2,50.5,-71.2Z"
@@ -104,14 +130,14 @@
     <!-- Hero section end -->
 
     <!-- About section -->
-    <section id="about" class="pb-32 pt-36">
+    <section id="about" class="pb-32 pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="mb-10 w-full px-4 lg:w-1/2">
                     <h4 class="mb-3 text-lg font-bold uppercase text-primary">
                         Tentang Saya
                     </h4>
-                    <h2 class="mb-3 max-w-md text-3xl font-bold text-dark lg:text-4xl">
+                    <h2 class="mb-3 max-w-md text-3xl font-bold text-dark lg:text-4xl dark:text-white">
                         Perkenalan singkat
                     </h2>
                     <p class="text-base font-medium text-secondary lg:text-lg">
@@ -121,7 +147,7 @@
                     </p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl">
+                    <h3 class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl dark:text-white">
                         Mari Berteman
                     </h3>
                     <p class="lg:text- mb-6 text-base font-medium text-secondary">
@@ -158,7 +184,7 @@
     <!-- About section end -->
 
     <!-- Skills section -->
-    <section id="skills" class="bg-slate-100 pb-32 pt-36">
+    <section id="skills" class="bg-slate-100 pb-32 pt-36 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-width-xl mx-auto mb-14 text-center">
@@ -170,7 +196,7 @@
             <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
                 <!-- Python -->
                 <div class="w-1/2 p-4 lg:w-1/3">
-                    <div class="flex h-full flex-col p-2 lg:flex-row">
+                    <div class="flex h-full flex-col p-2 lg:flex-row dark:text-white">
                         <!-- SVG Icon -->
                         <svg role="img" class="mx-auto mb-2 w-14 fill-current md:m-0" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +205,7 @@
                                 d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
                         </svg>
                         <!-- Text Content -->
-                        <div class="m-auto flex-grow items-center justify-center text-center md:ml-2 md:text-left">
+                        <div class="flex-grow items-center justify-center text-center md:text-left lg:ml-2">
                             <h3 class="text-xl font-semibold">Python</h3>
                             <p class="text-base font-medium text-secondary">
                                 Bahasa pemrograman tingkat tinggi
@@ -190,7 +216,7 @@
 
                 <!-- OpenCV -->
                 <div class="w-1/2 p-4 lg:w-1/3">
-                    <div class="flex h-full flex-col p-2 lg:flex-row">
+                    <div class="flex h-full flex-col p-2 lg:flex-row dark:text-white">
                         <!-- SVG Icon -->
                         <svg role="img" class="mx-auto mb-2 w-14 fill-current md:m-0" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -199,7 +225,7 @@
                                 d="M11.8992.8525C8.735.8525 6.17 3.4175 6.17 6.5817c0 2.102 1.1321 3.9398 2.8198 4.9366l1.6412-2.7849c.0411-.0699.0176-.1593-.0495-.2048-.6233-.4227-1.0328-1.137-1.0328-1.947 0-1.298 1.0524-2.3504 2.3505-2.3504 1.2981 0 2.3505 1.0524 2.3505 2.3505 0 .8098-.4095 1.5242-1.0328 1.947-.0671.0454-.0907.1348-.0495.2047l1.6414 2.785c1.6878-.9969 2.8199-2.8346 2.8199-4.9367 0-3.1642-2.5653-5.7292-5.7295-5.7292zm-6.17 10.8366C2.565 11.6891 0 14.2541 0 17.4183c0 3.1642 2.565 5.7292 5.7292 5.7292 3.1798 0 5.8074-2.6995 5.7275-5.8762H8.2313c-.0847 0-.1513.0717-.1519.1564-.0082 1.266-1.0644 2.3411-2.3502 2.3411-1.2981 0-2.3505-1.0524-2.3505-2.3505 0-1.2982 1.0524-2.3505 2.3505-2.3505.34 0 .663.0724.9547.2022.0713.0318.1566.0077.1962-.0595l1.6464-2.7935c-.8273-.4636-1.7815-.7279-2.7973-.7279zm15.4424.7614l-1.6366 2.7878c-.041.07-.0172.1594.05.2048.624.4217 1.0348 1.1354 1.0363 1.9452.0022 1.298-1.0483 2.352-2.3465 2.3542-1.298.0023-2.3523-1.0482-2.3545-2.3462-.0015-.8098.4068-1.5248 1.0294-1.9486.067-.0457.0905-.1353.0492-.2051l-1.6464-2.7818c-1.6859.9998-2.8146 2.8394-2.811 4.9415.0056 3.1641 2.575 5.7248 5.7393 5.7192 3.1641-.0054 5.7246-2.575 5.7192-5.7392-.0037-2.1022-1.139-3.938-2.8284-4.9318z" />
                         </svg>
                         <!-- Text Content -->
-                        <div class="m-auto flex-grow items-center justify-center text-center md:ml-2 md:text-left">
+                        <div class="flex-grow items-center justify-center text-center md:text-left lg:ml-2">
                             <h3 class="text-xl font-semibold">OpenCV</h3>
                             <p class="text-base font-medium text-secondary">
                                 Library untuk pengolahan citra
@@ -210,7 +236,7 @@
 
                 <!-- TensorFlow -->
                 <div class="w-1/2 p-4 lg:w-1/3">
-                    <div class="flex h-full flex-col p-2 lg:flex-row">
+                    <div class="flex h-full flex-col p-2 lg:flex-row dark:text-white">
                         <!-- SVG Icon -->
                         <svg role="img" class="mx-auto mb-2 w-14 fill-current md:m-0" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -219,17 +245,18 @@
                                 d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-.014-5.31L12.46 0v24l4.095-2.378V14.87l3.092 1.788-.018-4.618-3.074-1.756V7.603l6.168 3.564z" />
                         </svg>
                         <!-- Text Content -->
-                        <div
-                            class="m-auto flex-grow items-center justify-center text-center md:ml-2 md:text-left lg:text-left">
+                        <div class="flex-grow items-center justify-center text-center md:text-left lg:ml-2">
                             <h3 class="text-xl font-semibold">TensorFlow</h3>
-                            <p class="text-base font-medium">Library untuk AI</p>
+                            <p class="text-base font-medium text-secondary">
+                                Library untuk pengembangan AI
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- HTML -->
                 <div class="w-1/2 p-4 lg:w-1/3">
-                    <div class="flex h-full flex-col p-2 lg:flex-row">
+                    <div class="flex h-full flex-col p-2 lg:flex-row dark:text-white">
                         <!-- SVG Icon -->
                         <svg role="img" class="mx-auto mb-2 w-14 fill-current md:m-0" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -239,17 +266,18 @@
                         </svg>
 
                         <!-- Text Content -->
-                        <div
-                            class="m-auto flex-grow items-center justify-center text-center md:ml-2 md:text-left lg:text-left">
+                        <div class="flex-grow items-center justify-center text-center md:text-left lg:ml-2">
                             <h3 class="text-xl font-semibold">HTML</h3>
-                            <p class="text-base font-medium">Struktur Website</p>
+                            <p class="text-base font-medium text-secondary">
+                                Struktur Website
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- CSS -->
                 <div class="w-1/2 p-4 lg:w-1/3">
-                    <div class="flex h-full flex-col p-2 lg:flex-row">
+                    <div class="flex h-full flex-col p-2 lg:flex-row dark:text-white">
                         <!-- SVG Icon -->
                         <svg role="img" class="mx-auto mb-2 w-14 fill-current md:m-0" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -259,17 +287,18 @@
                         </svg>
 
                         <!-- Text Content -->
-                        <div
-                            class="m-auto flex-grow items-center justify-center text-center md:ml-2 md:text-left lg:text-left">
+                        <div class="flex-grow items-center justify-center text-center md:text-left lg:ml-2">
                             <h3 class="text-xl font-semibold">CSS</h3>
-                            <p class="text-base font-medium">Tampilan Website</p>
+                            <p class="text-base font-medium text-secondary">
+                                Tampilan Website
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tailwind -->
                 <div class="w-1/2 p-4 lg:w-1/3">
-                    <div class="flex h-full flex-col p-2 lg:flex-row">
+                    <div class="flex h-full flex-col p-2 lg:flex-row dark:text-white">
                         <!-- SVG Icon -->
                         <svg role="img" class="mx-auto mb-2 w-14 fill-current md:m-0" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -278,10 +307,11 @@
                                 d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
                         </svg>
                         <!-- Text Content -->
-                        <div
-                            class="m-auto flex-grow items-center justify-center text-center md:ml-2 md:text-left lg:text-left">
+                        <div class="flex-grow items-center justify-center text-center md:text-left lg:ml-2">
                             <h3 class="text-xl font-semibold">Tailwindcss</h3>
-                            <p class="text-base font-medium">Framework CSS</p>
+                            <p class="text-base font-medium text-secondary">
+                                Framework CSS
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -291,14 +321,16 @@
     <!-- Skills section end -->
 
     <!-- Portofolio section -->
-    <section id="portofolio" class="pb-16 pt-36">
+    <section id="portofolio" class="pb-16 pt-36 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-width-xl mx-auto mb-16 text-center">
                     <h4 class="mb-2 text-lg font-bold uppercase text-primary">
                         Portofolio
                     </h4>
-                    <h2 class="mb-4 text-3xl font-bold text-dark">Project Terbaru</h2>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white">
+                        Project Terbaru
+                    </h2>
                 </div>
             </div>
 
@@ -308,7 +340,7 @@
                     <div class="overflow-hidden rounded-md shadow-md">
                         <img src="dist/img/basestation.png" alt="basestation" width="w-full" />
                     </div>
-                    <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+                    <h3 class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white">
                         Basestation
                     </h3>
                     <p class="text-base font-medium text-secondary">
@@ -321,7 +353,7 @@
                     <div class="overflow-hidden rounded-md shadow-md">
                         <img src="dist/img/portofolio_v2.png" alt="web portofolio" width="w-full" />
                     </div>
-                    <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+                    <h3 class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white">
                         Web Portofolio Pertama
                     </h3>
                     <p class="text-base font-medium text-secondary">
@@ -333,7 +365,7 @@
                     <div class="overflow-hidden rounded-md shadow-md">
                         <img src="dist/img/personal_library.png" alt="web perpustakaan lokal" width="w-full" />
                     </div>
-                    <h3 class="mb-3 mt-5 text-xl font-semibold text-dark">
+                    <h3 class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white">
                         Web Perpustakaan Lokal
                     </h3>
                     <p class="text-base font-medium text-secondary">
@@ -347,14 +379,14 @@
     <!-- Portofolio section end -->
 
     <!-- Contact section -->
-    <section id="contact" class="bg-slate-100 pb-32 pt-36">
+    <section id="contact" class="bg-slate-100 pb-32 pt-36 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto mb-16 max-w-full text-center">
                     <h4 class="mb-2 text-lg font-bold uppercase text-primary">
                         Kontak
                     </h4>
-                    <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">
+                    <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-white">
                         Hubungi Kami
                     </h2>
                     <p class="text-md font-medium text-secondary md:text-lg">
@@ -551,4 +583,5 @@
     </script>
     <!-- Script javascript end -->
 </body>
+
 </html>
