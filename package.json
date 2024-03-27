@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
-    "compile": "npx tailwindcss -o ./public/css/final.css --minify"
+    "compile": "npx tailwindcss -o ./dist/final.css --minify"
   },
   "keywords": [],
   "author": "",
