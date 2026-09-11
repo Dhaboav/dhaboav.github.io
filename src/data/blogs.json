@@ -19,5 +19,12 @@
     "tag": "Web Dev",
     "title": "Migrasi Arsitektur React ke Feature-Sliced Design (FSD): Pengalaman dan Pembelajaran",
     "excerpt": "Cerita pengalaman memindahkan struktur project React ke Feature-Sliced Design, tantangan yang dihadapi, serta alasan di balik setiap perubahan."
+  },
+  {
+    "slug": "pengalaman-migrasi-windows-ke-linux",
+    "dateISO": "2026-09-11",
+    "tag": "Tech Blogs",
+    "title": "Pindah ke Linux: Pengalaman Migrasi dari Windows ke Ubuntu untuk Daily Driver",
+    "excerpt": "Berbagi pengalaman menggunakan Ubuntu sebagai sistem operasi utama dalam pengembangan perangkat lunak dan pemakaian sehari-hari."
   }
 ]
